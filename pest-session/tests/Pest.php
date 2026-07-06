@@ -48,3 +48,10 @@ function sum(int $a, int $b): int
 {
     return $a + $b;
 }
+
+function displayName(string $last, string $first): string
+{
+    return $last
+        ? "{$last}, {$first}"
+        : $first;
+}
