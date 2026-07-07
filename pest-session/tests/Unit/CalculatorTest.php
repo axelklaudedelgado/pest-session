@@ -3,7 +3,6 @@
 use App\Services\Calculator;
 
 describe('Calculator', function () {
-
     beforeEach(function () {
         $this->calculator = new Calculator();
     });

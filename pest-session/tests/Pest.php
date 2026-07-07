@@ -16,7 +16,7 @@ use Tests\TestCase;
 
 pest()->extend(TestCase::class)
     ->use(RefreshDatabase::class)
-    ->in('Feature', 'Browser');
+    ->in('Feature', 'Browser', 'Solutions');
 
 /*
 |--------------------------------------------------------------------------
@@ -47,4 +47,11 @@ expect()->extend('toBeOne', function () {
 function sum(int $a, int $b): int
 {
     return $a + $b;
+}
+
+function displayName(string $last, string $first): string
+{
+    return $last
+        ? "{$last}, {$first}"
+        : $first;
 }
